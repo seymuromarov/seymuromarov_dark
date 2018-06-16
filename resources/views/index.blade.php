@@ -224,7 +224,7 @@
                     <a href="https://github.com/seymuromarov"><img class="social-icon" src="social-icons/circle-white/github.png"></a>
                     <a href="https://www.instagram.com/seymuromarov/"><img class="social-icon" src="social-icons/circle-white/instagram.png"></a>
                     <a href="https://www.facebook.com/seymuromaroff"><img class="social-icon" src="social-icons/circle-white/facebook.png"></a>
-                    <a href="https://api.whatsapp.com/send?phone=994502244052"><img class="social-icon" src="social-icons/circle-white/whatsapp_grey.png"></a>
+                    <a href="https://api.whatsapp.com/send?phone=994513073940"><img class="social-icon" src="social-icons/circle-white/whatsapp_grey.png"></a>
                     {{--<a href="https://twitter.com/OmarovSeymur"><img class="social-icon" src="social-icons/circle-white/twitter.png"></a>--}}
                     <a href="https://www.linkedin.com/in/seymuromarov/"><img class="social-icon" src="social-icons/circle-white/linkedin.png"></a>
                 </div>
