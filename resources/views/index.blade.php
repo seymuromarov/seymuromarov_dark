@@ -14,6 +14,8 @@
 
     <link href="{{ asset('css/bulma.css')}}" rel="stylesheet">
     <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -255,6 +257,8 @@
 <script src="{{ asset('js/jquery3.3.1.js')}}"></script>
 <script src="{{ asset('js/axios.min.js')}}"></script>
 <script src="{{ asset('js/anix.umd.js')}}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
 <script src="{{ asset('js/seymur.js')}}"></script>
 
 <!--<script src="js/index.js"></script>-->

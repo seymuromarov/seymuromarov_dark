@@ -44,7 +44,7 @@ class MainController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return $validator->messages();
+            return response()->json($validator->messages(), 200);
         }
 
         Message::create([

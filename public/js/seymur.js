@@ -311,6 +311,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
+toastr.options = {
+    "closeButton": false,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": false,
+    "positionClass": "toast-bottom-center",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+};
+
 $("#sendMessage").click(function () {
 
     axios.post('/save/message', {
@@ -321,6 +339,11 @@ $("#sendMessage").click(function () {
     })
         .then(function (response) {
             console.log(response);
+            if (response.data == "ok") {
+                Command: toastr["success"]("Success")
+            } else {
+                Command: toastr["error"](JSON.stringify(response.data))
+            }
         })
         .catch(function (error) {
             console.log(error);
