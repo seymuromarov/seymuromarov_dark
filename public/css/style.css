@@ -823,3 +823,12 @@ a.navbar-item.active, a.navbar-item:hover {
 .hide-me {
     display: none;
 }
+
+.social-icon {
+    height: 42px;
+
+}
+
+.social-icons {
+    left: -10px;
+}
