@@ -7,6 +7,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <meta name="description"
+          content="Seymur Omarov 's Portfolio. Freelancer web ( PHP - Laravel-CI,Javascript-ES6-Jquery-NodeJS),C#,C++,Android Developer">
+    <meta name="keywords"
+          content="Seymur Omarov,omarov,seymur,programmer,cv,developer,laravel,portfolio,java,ömərov seymur,ömərov">
+    <meta name="web_author" content="Seymur Omarov">
+    <meta name="Robots" content="index, follow">
+    <meta name="yandex-verification" content="53f4f2683c352916"/>
     <title>Seymur Omarov</title>
 
     <!-- Fonts -->
@@ -28,7 +35,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a href="#" class="navbar-item navbar-logo">
-                    <img src="svg/solologo.svg"/><span class="hello u-right">Seymur Omarov</span>
+                    <img alt="Seymur Omarov" src="svg/solologo.svg"/><span class="hello u-right">Seymur Omarov</span>
                 </a>
                 <!-- 1245px -->
 
@@ -88,9 +95,11 @@
 
             </div>
 
-            <div class="column">
+            <div itemscope itemtype="http://schema.org/CreativeWork" class="column">
                 <p class="title">About <span class="secondary-color">me</span></p>
-                <p class="plain">My full name is Seymur Omarov and I am a web and software developer.
+                <p itemprop="author" itemscope itemtype="http://schema.org/Person" class="plain">My full name is <span
+                            itemprop="name"> Seymur
+                        Omarov </span> and I am a web and software developer.
                     I started when I was very young to develop apps in Pascal, expanding my knowledge
                     to all the other web system and achieving eventually more elaborated structures.
                 </p>
@@ -112,7 +121,7 @@
 <div id="pb">
     <div class="container">
         <label id="projectsSwitch" class="switchpills">
-            <input style="display: none" type="checkbox">
+            <input class="hide-me" type="checkbox">
             <span class="slider"></span>
             <span>Projects</span>
             <span>Packages</span>
@@ -175,7 +184,7 @@
     <div class="container">
         <div class="columns">
             <div class="column">
-                <img class="logo_footer" src="svg/seymur_02.svg" alt="logo">
+                <img class="logo_footer" src="svg/seymur_02.svg" alt="Seymur Omarov">
 
             </div>
             <div class="column contact-info">
@@ -237,6 +246,11 @@
 <div id="footer">
     <p>Made with <span class="red">hate</span> by me. © 2018. All Rights Reserved.</p>
 </div>
+<p class="hide-me">seymur omarov , seymur,Seymur,Omarov,portfolio,omarov seymur,seymur
+    omarov,cv,resume,seymur omarov cv,seymur cv,seymur omarov developer</p>
+<h1 class="hide-me">
+    Seymur,Omarov,Seymur Omarov CV,cv,portfolio,Seymur Omarov Portfolio,Resume
+</h1>
 
 <div id="blog-modal" class="modal">
     <div class="modal-background"></div>

@@ -513,6 +513,7 @@ a.navbar-item.active, a.navbar-item:hover {
     font-weight: 600;
     font-size: 18px
 }
+
 #contact .contact-info {
     margin-left: 20px;
 }
@@ -815,6 +816,10 @@ a.navbar-item.active, a.navbar-item:hover {
     color: red;
 }
 
-.navbar-burger:hover{
+.navbar-burger:hover {
     background: transparent;
+}
+
+.hide-me {
+    display: none;
 }
