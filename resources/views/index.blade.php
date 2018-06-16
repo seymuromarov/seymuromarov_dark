@@ -10,7 +10,7 @@
     <meta name="description"
           content="Seymur Omarov 's Portfolio. Freelancer web ( PHP - Laravel-CI,Javascript-ES6-Jquery-NodeJS),C#,C++,Android Developer">
     <meta name="keywords"
-          content="Seymur Omarov,omarov,seymur,programmer,cv,developer,laravel,portfolio,java,ömərov seymur,ömərov">
+          content="Seymur Omarov,omarov,seymur,programmer,cv,developer,laravel,portfolio,java,ömərov seymur,ömərov,web,proqramlaşdırma,android proqramlaşdırma,web proqramlaşdırma">
     <meta name="web_author" content="Seymur Omarov">
     <meta name="Robots" content="index, follow">
     <meta name="yandex-verification" content="53f4f2683c352916"/>
