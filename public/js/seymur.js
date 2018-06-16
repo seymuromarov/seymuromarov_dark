@@ -259,7 +259,6 @@ $(".showBlog").click(function () {
 });
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
 
     // Modals
@@ -309,3 +308,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+var token = document.head.querySelector('meta[name="csrf-token"]');
+
+$("#sendMessage").click(function () {
+
+    axios.post('/save/message', {
+        name: $("#name").val(),
+        email: $("#email").val(),
+        message: $("#message").val(),
+        _token: token
+    })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+});
+

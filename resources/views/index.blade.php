@@ -4,14 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Seymur Omarov</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-    <link href="css/bulma.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ asset('css/bulma.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
 <body class="no-select">
@@ -22,7 +26,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a href="#" class="navbar-item navbar-logo">
-                    <img src="png/logoplanet.png"/><span class="hello u-right">Seymur Omarov</span>
+                    <img src="svg/solologo.svg"/><span class="hello u-right">Seymur Omarov</span>
                 </a>
                 <!-- 1245px -->
 
@@ -148,11 +152,14 @@
             <div class="columns">
                 @foreach($blogs as $blog)
                     <div class="column blog is-4">
-                        <img data-value="{{$blog->id}}" class="showBlog" src="/storage/{{$blog->image}}" alt="Blog image">
+                        <img data-value="{{$blog->id}}" class="showBlog" src="/storage/{{$blog->image}}"
+                             alt="Blog image">
                         <div class="desc">
-                            <a data-value="{{$blog->id}}" class="showBlog"><h3 class="secondary-color showBlog">{{$blog->title}}</h3></a>
+                            <a data-value="{{$blog->id}}" class="showBlog"><h3
+                                        class="secondary-color showBlog">{{$blog->title}}</h3></a>
                             <p>{{$blog->excerpt}}</p>
-                            <a data-value="{{$blog->id}}" class="blog-link showBlog">Read More <i class="fa fa-chevron-circle-right"></i></a>
+                            <a data-value="{{$blog->id}}" class="blog-link showBlog">Read More <i
+                                        class="fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                 @endforeach
@@ -170,23 +177,29 @@
 
             </div>
             <div class="column contact-info">
-                <h4>CONTACT US</h4>
-                <div><i class="fa fa-map-marker-alt fai"></i>
-                    <p>Address: Lorem lorem lorem lorem lorem</p></div>
+                <h4>CONTACT ME</h4>
+                {{--<div><i class="fa fa-map-marker-alt fai"></i>--}}
+                {{--<p>Address: Lorem lorem lorem lorem lorem</p></div>--}}
                 <div><i class="fa fa-phone fai"></i>
-                    <p>Phone: + lorem lorem</p></div>
+                    <p>Phone: +994513073940</p></div>
                 <div><i class="fa fa-envelope fai"></i>
-                    <p>Email: loremlorem@lorem.com</p></div>
+                    <a href="mailto:omarov.seymur@outlook.com">Email: omarov.seymur@outlook.com</a><br>
+                </div>
+                <div><i class="fa fa-envelope fai"></i>
+                    <a href="mailto:me@seymuromarov.com">Email: me@seymuromarov.com</a>
+                </div>
                 <div><i class="fa fa-clock fai"></i>
-                    <p>Monday - Friday: 10.00 am to 18.00 pm<br/>Saturday - Sunday : Closed</p></div>
+                    <p>Monday - Friday: 10.00 am to 18.00 pm<br/>
+                        {{--Saturday - Sunday : Closed--}}
+                    </p></div>
             </div>
             <div class="column write-us">
-                <h4>WRITE US</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4>WRITE ME</h4>
+                <p>Use forum below to contact me.</p>
                 <div class="form-left">
                     <div class="field">
                         <div class="control has-icons-left">
-                            <input class="input" type="text" placeholder="Name" value="">
+                            <input id="name" class="input" type="text" placeholder="Name" value="">
                             <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
@@ -194,14 +207,14 @@
                     </div>
                     <div class="field">
                         <div class="control has-icons-left">
-                            <input class="input" type="text" placeholder="Email" value="">
+                            <input id="email" class="input" type="text" placeholder="Email" value="">
                             <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
                         </div>
                     </div>
                     <div class="control">
-                        <button class="button is-primary">Send Us</button>
+                        <button id="sendMessage" class="button is-primary">Send Us</button>
                     </div>
                 </div>
                 <div class="form-right">
@@ -210,7 +223,7 @@
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-pencil-alt"></i>
                                 </span>
-                            <textarea class="textarea" placeholder="Message"></textarea>
+                            <textarea id="message" class="textarea" placeholder="Message"></textarea>
                         </div>
                     </div>
                 </div>
@@ -238,26 +251,13 @@
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
 </div>
-{{--<div id="blog-modal" class="modal">--}}
-{{--<div class="modal-background"></div>--}}
-{{--<div class="modal-content">--}}
-{{--<!-- Any other Bulma elements you want -->--}}
-{{--<table>--}}
-{{--<tr>--}}
-{{--<td>Jhon</td>--}}
-{{--<td>Hi</td>--}}
-{{--</tr>--}}
-{{--</table>--}}
-{{--</div>--}}
-{{--<button class="modal-close"></button>--}}
-{{--</div>--}}
 
-<script src="js/jquery3.3.1.js"></script>
-<script src="js/axios.min.js"></script>
-<script src="js/anix.umd.js"></script>
+<script src="{{ asset('js/jquery3.3.1.js')}}"></script>
+<script src="{{ asset('js/axios.min.js')}}"></script>
+<script src="{{ asset('js/anix.umd.js')}}"></script>
+<script src="{{ asset('js/seymur.js')}}"></script>
 
 <!--<script src="js/index.js"></script>-->
-<script src="js/seymur.js"></script>
 </body>
 
 </html>

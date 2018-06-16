@@ -460,7 +460,7 @@ a.navbar-item.active, a.navbar-item:hover {
 
 #pb #blogs img {
     border-color: #22a7f0;
-    height: 230px;
+    /*height: 230px;*/
     width: auto;
     cursor: pointer;
 }
@@ -513,6 +513,9 @@ a.navbar-item.active, a.navbar-item:hover {
     font-weight: 600;
     font-size: 18px
 }
+#contact .contact-info {
+    margin-left: 20px;
+}
 
 #contact .contact-info h4 {
     padding-bottom: 40px
@@ -522,6 +525,13 @@ a.navbar-item.active, a.navbar-item:hover {
     position: relative;
     padding: 5px;
     font-size: 14px
+}
+
+#contact .contact-info div a {
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+    color: white;
 }
 
 #contact .contact-info .fai {
@@ -801,7 +811,10 @@ a.navbar-item.active, a.navbar-item:hover {
                                      supported by Chrome and Opera */
 }
 
-
-.red{
+.red {
     color: red;
+}
+
+.navbar-burger:hover{
+    background: transparent;
 }
