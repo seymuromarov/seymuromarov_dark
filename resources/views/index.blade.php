@@ -19,7 +19,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-    <link href="{{ asset('css/bulma.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/bulma.min.css')}}" rel="stylesheet">
     <link href="{{ asset('css/style.css')}}" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" type="text/css">
 
@@ -108,7 +108,7 @@
     <div class="container">
         <div class="columns">
             <div class="column">
-                <img class="person" src="png/metransparent.png" height="450"/>
+                <img class="person" alt="seymur omarov" src="png/metransparent.png" height="450"/>
 
             </div>
 
