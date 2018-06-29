@@ -14,7 +14,7 @@
     <meta name="web_author" content="Seymur Omarov">
     <meta name="Robots" content="index, follow">
     <meta name="yandex-verification" content="53f4f2683c352916"/>
-    <title>Seymur Omarov</title>
+    <title>Seymur Omarov - Portfolio</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -221,12 +221,17 @@
                     </p>
                 </div>
                 <div class="social-icons">
-                    <a href="https://github.com/seymuromarov"><img class="social-icon" src="social-icons/circle-white/github.png"></a>
-                    <a href="https://www.instagram.com/seymuromarov/"><img class="social-icon" src="social-icons/circle-white/instagram.png"></a>
-                    <a href="https://www.facebook.com/seymuromaroff"><img class="social-icon" src="social-icons/circle-white/facebook.png"></a>
-                    <a href="https://api.whatsapp.com/send?phone=994513073940"><img class="social-icon" src="social-icons/circle-white/whatsapp_grey.png"></a>
+                    <a href="https://github.com/seymuromarov"><img alt="github" class="social-icon"
+                                                                   src="social-icons/circle-white/github.png"></a>
+                    <a href="https://www.instagram.com/seymuromarov/"><img alt="instagram" class="social-icon"
+                                                                           src="social-icons/circle-white/instagram.png"></a>
+                    <a href="https://www.facebook.com/seymuromaroff"><img alt="facebook" class="social-icon"
+                                                                          src="social-icons/circle-white/facebook.png"></a>
+                    <a href="https://api.whatsapp.com/send?phone=994513073940"><img alt="whatsapp" class="social-icon"
+                                                                                    src="social-icons/circle-white/whatsapp_grey.png"></a>
                     {{--<a href="https://twitter.com/OmarovSeymur"><img class="social-icon" src="social-icons/circle-white/twitter.png"></a>--}}
-                    <a href="https://www.linkedin.com/in/seymuromarov/"><img class="social-icon" src="social-icons/circle-white/linkedin.png"></a>
+                    <a href="https://www.linkedin.com/in/seymuromarov/"><img alt="linkedin" class="social-icon"
+                                                                             src="social-icons/circle-white/linkedin.png"></a>
                 </div>
 
             </div>
