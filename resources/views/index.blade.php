@@ -39,6 +39,7 @@
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-120973478-1', 'auto');
+        ga('require', 'GTM-T8QFP89');
         ga('send', 'pageview');
 
     </script>
