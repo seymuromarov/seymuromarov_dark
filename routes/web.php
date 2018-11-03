@@ -14,6 +14,7 @@
 Route::get('/', 'MainController@index');
 Route::get('/blog/{id}', 'MainController@getBlog');
 Route::post('/save/message', 'MainController@saveMessage');
+Route::post('/licenseCheck', 'LicenseController@check');
 
 
 Route::group(['prefix' => 'admin'], function () {
