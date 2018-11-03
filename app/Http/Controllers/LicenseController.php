@@ -19,7 +19,7 @@ class LicenseController extends Controller
                 "success" => 0
             ]);
         } else {
-            License::where("code", $request->license)->where('status', 0)->update([
+            License::where("code", $request->license)->update([
                 "status" => 1
             ]);
             return response()->json([
