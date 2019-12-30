@@ -110,8 +110,8 @@ body, html {
 
 .wave {
     background-color: #212d43;
-    -webkit-mask-image: url(https://svgshare.com/i/5qC.svg);
-    mask-image: url(https://svgshare.com/i/5qC.svg);
+    -webkit-mask-image: url(/svg/wave.svg);
+    mask-image: url(/svg/wave.svg);
     top: -98px;
     width: calc(100vw + 1800px);
     height: 98px;
